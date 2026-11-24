@@ -1,0 +1,215 @@
+{
+  "timestamp": "2026-11-19T12:10:42.400Z",
+  "datasetRoot": "D:\\VickeyApps Intern\\Document Classification\\dataset",
+  "categories": {
+    "aadhaar": {
+      "path": "D:\\VickeyApps Intern\\Document Classification\\dataset\\aadhaar",
+      "splits": {
+        "test": {
+          "imageCount": 31,
+          "labelCount": 31,
+          "extensions": {
+            ".jpg": 31
+          }
+        },
+        "train": {
+          "imageCount": 669,
+          "labelCount": 669,
+          "extensions": {
+            ".jpg": 669
+          }
+        },
+        "valid": {
+          "imageCount": 46,
+          "labelCount": 46,
+          "extensions": {
+            ".jpg": 46
+          }
+        }
+      },
+      "yamlFiles": [],
+      "otherFiles": []
+    },
+    "driving_license": {
+      "path": "D:\\VickeyApps Intern\\Document Classification\\dataset\\driving_license",
+      "splits": {
+        "test": {
+          "imageCount": 5,
+          "labelCount": 5,
+          "extensions": {
+            ".jpg": 5
+          }
+        },
+        "train": {
+          "imageCount": 1274,
+          "labelCount": 7716,
+          "extensions": {
+            ".jpg": 1274
+          }
+        },
+        "valid": {
+          "imageCount": 451,
+          "labelCount": 451,
+          "extensions": {
+            ".jpg": 451
+          }
+        }
+      },
+      "yamlFiles": [],
+      "otherFiles": []
+    },
+    "pan": {
+      "path": "D:\\VickeyApps Intern\\Document Classification\\dataset\\pan",
+      "splits": {
+        "train": {
+          "imageCount": 1200,
+          "labelCount": 1200,
+          "extensions": {
+            ".jpg": 1200
+          }
+        },
+        "valid": {
+          "imageCount": 188,
+          "labelCount": 188,
+          "extensions": {
+            ".jpg": 188
+          }
+        }
+      },
+      "yamlFiles": [],
+      "otherFiles": []
+    },
+    "passport": {
+      "path": "D:\\VickeyApps Intern\\Document Classification\\dataset\\passport",
+      "splits": {
+        "test": {
+          "imageCount": 96,
+          "labelCount": 96,
+          "extensions": {
+            ".jpg": 96
+          }
+        },
+        "train": {
+          "imageCount": 1252,
+          "labelCount": 1252,
+          "extensions": {
+            ".jpg": 1252
+          }
+        },
+        "valid": {
+          "imageCount": 64,
+          "labelCount": 64,
+          "extensions": {
+            ".jpg": 64
+          }
+        }
+      },
+      "yamlFiles": [],
+      "otherFiles": []
+    }
+  },
+  "summary": {
+    "totalCategories": 4,
+    "categoryNames": [
+      "aadhaar",
+      "driving_license",
+      "pan",
+      "passport"
+    ],
+    "totalImages": 5276,
+    "totalLabels": 11718,
+    "totalYamlConfigs": 0,
+    "splits": {
+      "train": 4395,
+      "valid": 749,
+      "test": 132
+    }
+  },
+  "leakageAnalysis": {},
+  "duplicateAnalysis": {
+    "exactByteDuplicates": {
+      "uniqueIdenticalHashes": 0,
+      "redundantFileCount": 0
+    },
+    "augmentedDocumentLeakage": {
+      "aadhaar": {
+        "totalUniqueBaseDocuments": 29,
+        "leakedBaseDocumentsAcrossSplits": 27,
+        "leakageRate": "93.10%",
+        "leakedExamples": [
+          {
+            "prefix": "06a0686f91bed47d1f4873e4d104442c_jpg",
+            "splits": [
+              "test",
+              "train",
+              "valid"
+            ],
+            "sampleCount": 24
+          },
+          {
+            "prefix": "086d820550f34066764f4047ddc263ca_jpg",
+            "splits": [
+              "test",
+              "train"
+            ],
+            "sampleCount": 44
+          },
+          {
+            "prefix": "0d4c873ace54e82fb49c451a9bdc6d24_jpg",
+            "splits": [
+              "test",
+              "train",
+              "valid"
+            ],
+            "sampleCount": 15
+          },
+          {
+            "prefix": "102_509409293_jpg",
+            "splits": [
+              "test",
+              "train",
+              "valid"
+            ],
+            "sampleCount": 46
+          },
+          {
+            "prefix": "110_504886170_jpg",
+            "splits": [
+              "test",
+              "train",
+              "valid"
+            ],
+            "sampleCount": 35
+          }
+        ]
+      },
+      "driving_license": {
+        "totalUniqueBaseDocuments": 881,
+        "leakedBaseDocumentsAcrossSplits": 0,
+        "leakageRate": "0.00%",
+        "leakedExamples": []
+      },
+      "pan": {
+        "totalUniqueBaseDocuments": 1387,
+        "leakedBaseDocumentsAcrossSplits": 0,
+        "leakageRate": "0.00%",
+        "leakedExamples": []
+      },
+      "passport": {
+        "totalUniqueBaseDocuments": 1051,
+        "leakedBaseDocumentsAcrossSplits": 1,
+        "leakageRate": "0.10%",
+        "leakedExamples": [
+          {
+            "prefix": "25_jpg",
+            "splits": [
+              "test",
+              "train"
+            ],
+            "sampleCount": 3
+          }
+        ]
+      }
+    }
+  }
+}

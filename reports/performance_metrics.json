@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-11-19T15:59:34.182Z",
+  "measurements": {
+    "modelInitTimeMs": 12440,
+    "latenciesMs": [
+      1030,
+      1007,
+      880,
+      811,
+      880,
+      954,
+      1101,
+      1157,
+      1224,
+      1153
+    ],
+    "avgInferenceLatencyMs": 1019.7,
+    "minInferenceLatencyMs": 811,
+    "maxInferenceLatencyMs": 1224,
+    "memory": {
+      "initialHeapUsedMb": 22.83,
+      "finalHeapUsedMb": 21.28,
+      "heapDeltaMb": -1.55,
+      "rssMb": 153.35
+    },
+    "frontendBuild": {
+      "distSizeBytes": 360917,
+      "distSizeKb": 352.5
+    }
+  }
+}

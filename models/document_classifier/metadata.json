@@ -1,0 +1,329 @@
+{
+  "modelName": "MobileNetV2-IdentityDocumentClassifier",
+  "savedAt": "2026-11-22T09:49:51.709Z",
+  "totalRuntimeSeconds": 748.4,
+  "headTrainingDurationSeconds": 743.6,
+  "backend": "cpu",
+  "classes": [
+    "aadhaar",
+    "driving_license",
+    "pan",
+    "passport"
+  ],
+  "hyperparameters": {
+    "epochs": 20,
+    "batchSize": 64,
+    "learningRate": 0.0005,
+    "featureDim": 1280,
+    "architecture": [
+      {
+        "layer": "MobileNetV2_GAP",
+        "units": 1280,
+        "trainable": false
+      },
+      {
+        "layer": "Dense",
+        "units": 128,
+        "activation": "relu",
+        "trainable": true
+      },
+      {
+        "layer": "Dropout",
+        "rate": 0.3
+      },
+      {
+        "layer": "Dense",
+        "units": 64,
+        "activation": "relu",
+        "trainable": true
+      },
+      {
+        "layer": "Dropout",
+        "rate": 0.2
+      },
+      {
+        "layer": "Dense",
+        "units": 4,
+        "activation": "softmax",
+        "trainable": true
+      }
+    ]
+  },
+  "trainingHistory": [
+    {
+      "epoch": 1,
+      "loss": 1.3009014129638672,
+      "accuracy": 0.3639906346797943,
+      "valLoss": 1.1280763149261475,
+      "valAccuracy": 0.5684038996696472
+    },
+    {
+      "epoch": 2,
+      "loss": 1.0495153665542603,
+      "accuracy": 0.5427383780479431,
+      "valLoss": 0.8772078156471252,
+      "valAccuracy": 0.6612377762794495
+    },
+    {
+      "epoch": 3,
+      "loss": 0.8538490533828735,
+      "accuracy": 0.6461418271064758,
+      "valLoss": 0.6677625775337219,
+      "valAccuracy": 0.7312703728675842
+    },
+    {
+      "epoch": 4,
+      "loss": 0.7070127725601196,
+      "accuracy": 0.7157703042030334,
+      "valLoss": 0.5644639730453491,
+      "valAccuracy": 0.8387622237205505
+    },
+    {
+      "epoch": 5,
+      "loss": 0.6085467338562012,
+      "accuracy": 0.7599376440048218,
+      "valLoss": 0.5781745910644531,
+      "valAccuracy": 0.7361563444137573
+    },
+    {
+      "epoch": 6,
+      "loss": 0.5756160020828247,
+      "accuracy": 0.7627955079078674,
+      "valLoss": 0.4426439106464386,
+      "valAccuracy": 0.8599348664283752
+    },
+    {
+      "epoch": 7,
+      "loss": 0.5077375173568726,
+      "accuracy": 0.8015068769454956,
+      "valLoss": 0.40566375851631165,
+      "valAccuracy": 0.8583061695098877
+    },
+    {
+      "epoch": 8,
+      "loss": 0.45595645904541016,
+      "accuracy": 0.8282670974731445,
+      "valLoss": 0.42934152483940125,
+      "valAccuracy": 0.8273615837097168
+    },
+    {
+      "epoch": 9,
+      "loss": 0.43034109473228455,
+      "accuracy": 0.825928807258606,
+      "valLoss": 0.33938559889793396,
+      "valAccuracy": 0.8941367864608765
+    },
+    {
+      "epoch": 10,
+      "loss": 0.40587475895881653,
+      "accuracy": 0.8409976363182068,
+      "valLoss": 0.3080914616584778,
+      "valAccuracy": 0.9006514549255371
+    },
+    {
+      "epoch": 11,
+      "loss": 0.39901167154312134,
+      "accuracy": 0.846193790435791,
+      "valLoss": 0.29361239075660706,
+      "valAccuracy": 0.9136807918548584
+    },
+    {
+      "epoch": 12,
+      "loss": 0.349290668964386,
+      "accuracy": 0.8669784069061279,
+      "valLoss": 0.4613548517227173,
+      "valAccuracy": 0.8208469152450562
+    },
+    {
+      "epoch": 13,
+      "loss": 0.36662358045578003,
+      "accuracy": 0.8508703708648682,
+      "valLoss": 0.3762314021587372,
+      "valAccuracy": 0.8697068691253662
+    },
+    {
+      "epoch": 14,
+      "loss": 0.35804086923599243,
+      "accuracy": 0.8643803596496582,
+      "valLoss": 0.2819998562335968,
+      "valAccuracy": 0.905537486076355
+    },
+    {
+      "epoch": 15,
+      "loss": 0.3413224220275879,
+      "accuracy": 0.8664588332176208,
+      "valLoss": 0.29806622862815857,
+      "valAccuracy": 0.8941367864608765
+    },
+    {
+      "epoch": 16,
+      "loss": 0.3370877206325531,
+      "accuracy": 0.8729540109634399,
+      "valLoss": 0.3126460909843445,
+      "valAccuracy": 0.885993480682373
+    },
+    {
+      "epoch": 17,
+      "loss": 0.30019611120224,
+      "accuracy": 0.88646399974823,
+      "valLoss": 0.2525613307952881,
+      "valAccuracy": 0.920195460319519
+    },
+    {
+      "epoch": 18,
+      "loss": 0.2989620566368103,
+      "accuracy": 0.892439603805542,
+      "valLoss": 0.2571435570716858,
+      "valAccuracy": 0.9104234576225281
+    },
+    {
+      "epoch": 19,
+      "loss": 0.2892875671386719,
+      "accuracy": 0.8849051594734192,
+      "valLoss": 0.3647521436214447,
+      "valAccuracy": 0.8599348664283752
+    },
+    {
+      "epoch": 20,
+      "loss": 0.30636391043663025,
+      "accuracy": 0.8768511414527893,
+      "valLoss": 0.26475054025650024,
+      "valAccuracy": 0.9120520949363708
+    }
+  ],
+  "evaluation": {
+    "validation": {
+      "totalSamples": 614,
+      "accuracy": 0.9120521172638436,
+      "classMetrics": {
+        "aadhaar": {
+          "support": 124,
+          "truePositives": 122,
+          "falsePositives": 7,
+          "falseNegatives": 2,
+          "accuracy": 0.9838709677419355,
+          "precision": 0.9457364341085271,
+          "recall": 0.9838709677419355,
+          "f1Score": 0.9644268774703558
+        },
+        "driving_license": {
+          "support": 152,
+          "truePositives": 141,
+          "falsePositives": 23,
+          "falseNegatives": 11,
+          "accuracy": 0.9276315789473685,
+          "precision": 0.8597560975609756,
+          "recall": 0.9276315789473685,
+          "f1Score": 0.8924050632911392
+        },
+        "pan": {
+          "support": 188,
+          "truePositives": 167,
+          "falsePositives": 13,
+          "falseNegatives": 21,
+          "accuracy": 0.8882978723404256,
+          "precision": 0.9277777777777778,
+          "recall": 0.8882978723404256,
+          "f1Score": 0.907608695652174
+        },
+        "passport": {
+          "support": 150,
+          "truePositives": 130,
+          "falsePositives": 11,
+          "falseNegatives": 20,
+          "accuracy": 0.8666666666666667,
+          "precision": 0.9219858156028369,
+          "recall": 0.8666666666666667,
+          "f1Score": 0.8934707903780069
+        }
+      }
+    },
+    "test": {
+      "totalSamples": 587,
+      "accuracy": 0.8960817717206133,
+      "confusionMatrix": [
+        [
+          135,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          145,
+          2,
+          1
+        ],
+        [
+          5,
+          11,
+          131,
+          3
+        ],
+        [
+          11,
+          12,
+          13,
+          115
+        ]
+      ],
+      "classMetrics": {
+        "aadhaar": {
+          "support": 135,
+          "truePositives": 135,
+          "falsePositives": 19,
+          "falseNegatives": 0,
+          "accuracy": 1,
+          "precision": 0.8766233766233766,
+          "recall": 1,
+          "f1Score": 0.9342560553633218
+        },
+        "driving_license": {
+          "support": 151,
+          "truePositives": 145,
+          "falsePositives": 23,
+          "falseNegatives": 6,
+          "accuracy": 0.9602649006622517,
+          "precision": 0.8630952380952381,
+          "recall": 0.9602649006622517,
+          "f1Score": 0.9090909090909091
+        },
+        "pan": {
+          "support": 150,
+          "truePositives": 131,
+          "falsePositives": 15,
+          "falseNegatives": 19,
+          "accuracy": 0.8733333333333333,
+          "precision": 0.8972602739726028,
+          "recall": 0.8733333333333333,
+          "f1Score": 0.8851351351351352
+        },
+        "passport": {
+          "support": 151,
+          "truePositives": 115,
+          "falsePositives": 4,
+          "falseNegatives": 36,
+          "accuracy": 0.7615894039735099,
+          "precision": 0.9663865546218487,
+          "recall": 0.7615894039735099,
+          "f1Score": 0.8518518518518519
+        }
+      },
+      "macroAvg": {
+        "precision": 0.9008413608282666,
+        "recall": 0.8987969094922738,
+        "f1Score": 0.8950834878603044
+      },
+      "weightedAvg": {
+        "precision": 0.901507576900045,
+        "recall": 0.8960817717206133,
+        "f1Score": 0.8940326995684424
+      }
+    }
+  },
+  "status": {
+    "isTrained": true,
+    "otherClassSupported": false,
+    "rejectionThresholdRecommended": 0.7
+  }
+}

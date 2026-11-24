@@ -1,0 +1,570 @@
+{
+  "pan": [
+    {
+      "index": 1,
+      "file": "00c167be-imgtopdf_generated_2508201303047_page-47_jpg.rf.360f08da909314195eb0fb0f063500b6.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.9884,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0006,
+        "driving_license": 0,
+        "pan": 0.9884,
+        "passport": 0.011
+      }
+    },
+    {
+      "index": 2,
+      "file": "00fb6eeb-58c10f76367dd5b167225fbe_pan_jpg.rf.2e84961f7659576a2da89681ca9ff2f3.jpg",
+      "actualType": "pan",
+      "detectedType": "driving_license",
+      "confidence": 0.8453,
+      "isCorrect": false,
+      "probabilities": {
+        "aadhaar": 0.0161,
+        "driving_license": 0.8453,
+        "pan": 0.0877,
+        "passport": 0.0509
+      }
+    },
+    {
+      "index": 3,
+      "file": "01d05582-5847b2009867b37d04746fa1_pan_jpg.rf.1abc8e83147343c2ff37045ecf3dec9d.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.8921,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0032,
+        "driving_license": 0.0378,
+        "pan": 0.8921,
+        "passport": 0.0669
+      }
+    },
+    {
+      "index": 4,
+      "file": "0a38d6ac-imgtopdf_generated_2208201757059_page-62_jpg.rf.69efe915fce0eaf24ae4808d767ea5b4.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.9914,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0015,
+        "driving_license": 0.0008,
+        "pan": 0.9914,
+        "passport": 0.0063
+      }
+    },
+    {
+      "index": 5,
+      "file": "0b169e06-5844e4ba2b1bd3e91955b304_pan_jpg.rf.1d55ef99ac14141d38b24a74f0bc3638.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.5936,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0131,
+        "driving_license": 0.1577,
+        "pan": 0.5936,
+        "passport": 0.2356
+      }
+    },
+    {
+      "index": 6,
+      "file": "0e626de1-56a8-4965-acaf-811ceae3c038_pancard_content_1708019802_jpg.rf.d64d0db18cdb02302ee8504c38d5ec57.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.7898,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0032,
+        "driving_license": 0.0582,
+        "pan": 0.7898,
+        "passport": 0.1487
+      }
+    },
+    {
+      "index": 7,
+      "file": "110_jpg.rf.a9d04154c2ca7411b6342210c68f4cfd.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 1,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0,
+        "driving_license": 0,
+        "pan": 1,
+        "passport": 0
+      }
+    },
+    {
+      "index": 8,
+      "file": "1148_png_jpg.rf.34f8e4f358c3f5becdbc3802543e76e0.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 0.9124,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.001,
+        "driving_license": 0.0324,
+        "pan": 0.9124,
+        "passport": 0.0542
+      }
+    },
+    {
+      "index": 9,
+      "file": "114_png.rf.77bb80dc148fc2d068dbcb89d52cc2ac.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 1,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0,
+        "driving_license": 0,
+        "pan": 1,
+        "passport": 0
+      }
+    },
+    {
+      "index": 10,
+      "file": "115_jpg.rf.9f2a01b4a2102011d3da97e732aa7366.jpg",
+      "actualType": "pan",
+      "detectedType": "pan",
+      "confidence": 1,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0,
+        "driving_license": 0,
+        "pan": 1,
+        "passport": 0
+      }
+    }
+  ],
+  "driving_license": [
+    {
+      "index": 1,
+      "file": "DL1271_png.rf.39d768ad5aed8694c6e801f6b26e42a0.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9887,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0025,
+        "driving_license": 0.9887,
+        "pan": 0.0029,
+        "passport": 0.0059
+      }
+    },
+    {
+      "index": 2,
+      "file": "DL1323_png.rf.030a42be0cfbf0f612c4a8edb0c08a54.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9997,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0002,
+        "driving_license": 0.9997,
+        "pan": 0.0001,
+        "passport": 0.0001
+      }
+    },
+    {
+      "index": 3,
+      "file": "DL1472_png.rf.9824780781f3712af5cebe7b11f4f5f3.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9849,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0025,
+        "driving_license": 0.9849,
+        "pan": 0.0063,
+        "passport": 0.0063
+      }
+    },
+    {
+      "index": 4,
+      "file": "DL1611_png.rf.effeee52d752f5b343e41d7dfc451c96.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9371,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0517,
+        "driving_license": 0.9371,
+        "pan": 0.0017,
+        "passport": 0.0094
+      }
+    },
+    {
+      "index": 5,
+      "file": "DL1691_png.rf.7cc0aead5b00989faebcf3c1b98743c1.jpg",
+      "actualType": "driving_license",
+      "detectedType": "aadhaar",
+      "confidence": 0.8991,
+      "isCorrect": false,
+      "probabilities": {
+        "aadhaar": 0.8991,
+        "driving_license": 0.0956,
+        "pan": 0.0036,
+        "passport": 0.0016
+      }
+    },
+    {
+      "index": 6,
+      "file": "DL1848_png.rf.9aefb3da4a539d3ea804863f722fc969.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9996,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0002,
+        "driving_license": 0.9996,
+        "pan": 0.0001,
+        "passport": 0.0002
+      }
+    },
+    {
+      "index": 7,
+      "file": "DL1913_png.rf.7b16cc458d3966e9dab3060088467a3d.jpg",
+      "actualType": "driving_license",
+      "detectedType": "pan",
+      "confidence": 0.5083,
+      "isCorrect": false,
+      "probabilities": {
+        "aadhaar": 0.0311,
+        "driving_license": 0.0258,
+        "pan": 0.5083,
+        "passport": 0.4348
+      }
+    },
+    {
+      "index": 8,
+      "file": "DL1946_png.rf.eb5f2c5a92d72fde2b868c645f0a274c.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.6308,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0042,
+        "driving_license": 0.6308,
+        "pan": 0.3163,
+        "passport": 0.0487
+      }
+    },
+    {
+      "index": 9,
+      "file": "DL1977_png.rf.04136953f524360c23574e81e0c0eedc.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9968,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.002,
+        "driving_license": 0.9968,
+        "pan": 0.0008,
+        "passport": 0.0004
+      }
+    },
+    {
+      "index": 10,
+      "file": "DL1977_png.rf.7e4e6adae1eaf86e91de5fb8c7e1b47a.jpg",
+      "actualType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.995,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0043,
+        "driving_license": 0.995,
+        "pan": 0.0003,
+        "passport": 0.0004
+      }
+    }
+  ],
+  "aadhaar": [
+    {
+      "index": 1,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.065804da68316eabb72ddf4cf7d3b356.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9779,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9779,
+        "driving_license": 0.0195,
+        "pan": 0.0016,
+        "passport": 0.001
+      }
+    },
+    {
+      "index": 2,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.158732057954f997583a6d8c96176384.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.947,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.947,
+        "driving_license": 0.0204,
+        "pan": 0.0235,
+        "passport": 0.0091
+      }
+    },
+    {
+      "index": 3,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.176123e453d3fa37eb76eb7bd62d5660.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9912,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9912,
+        "driving_license": 0.0062,
+        "pan": 0.0016,
+        "passport": 0.0009
+      }
+    },
+    {
+      "index": 4,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.188ef70f2573894160326e3bf6e6deed.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9504,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9504,
+        "driving_license": 0.0411,
+        "pan": 0.0062,
+        "passport": 0.0022
+      }
+    },
+    {
+      "index": 5,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.2f998515f4a4a36605032b7e9b5c7054.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9963,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9963,
+        "driving_license": 0.0018,
+        "pan": 0.001,
+        "passport": 0.0009
+      }
+    },
+    {
+      "index": 6,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.31eb19ba4ad35e908b4c6d72e7e1a794.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.8815,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.8815,
+        "driving_license": 0.1127,
+        "pan": 0.0041,
+        "passport": 0.0018
+      }
+    },
+    {
+      "index": 7,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.7db29f7201dc6fa83205b6fba31fae19.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9773,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9773,
+        "driving_license": 0.0148,
+        "pan": 0.0061,
+        "passport": 0.0017
+      }
+    },
+    {
+      "index": 8,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.89552626b87b05aefafa063a529936df.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9491,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9491,
+        "driving_license": 0.0174,
+        "pan": 0.0109,
+        "passport": 0.0226
+      }
+    },
+    {
+      "index": 9,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.a327e8211b46143d960d9763f7d53256.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9616,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9616,
+        "driving_license": 0.0349,
+        "pan": 0.0024,
+        "passport": 0.0011
+      }
+    },
+    {
+      "index": 10,
+      "file": "14171f7e3e906f9bb9cbee0e44b183ab_jpg.rf.e7b0288b2184d62b1ae4bac64796d415.jpg",
+      "actualType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.9573,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.9573,
+        "driving_license": 0.0376,
+        "pan": 0.0038,
+        "passport": 0.0013
+      }
+    }
+  ],
+  "passport": [
+    {
+      "index": 1,
+      "file": "0d1a6a8cc4dfb6a716f6ecc32487a851_jpg.rf.6dc8b55a7033ab72c656ccb2511b8ae8.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.9724,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0005,
+        "driving_license": 0.0098,
+        "pan": 0.0173,
+        "passport": 0.9724
+      }
+    },
+    {
+      "index": 2,
+      "file": "1-3f11a7726c_jpg.rf.97c08407e6268fd928ce93caa24fe1a1.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.9618,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0006,
+        "driving_license": 0.0248,
+        "pan": 0.0128,
+        "passport": 0.9618
+      }
+    },
+    {
+      "index": 3,
+      "file": "1-9a0e31074a_jpg.rf.acb0ea9d36827d31cf283c6721a8868e.jpg",
+      "actualType": "passport",
+      "detectedType": "pan",
+      "confidence": 0.7103,
+      "isCorrect": false,
+      "probabilities": {
+        "aadhaar": 0,
+        "driving_license": 0.014,
+        "pan": 0.7103,
+        "passport": 0.2757
+      }
+    },
+    {
+      "index": 4,
+      "file": "101_jpg.rf.620b8f9a7bf000c3e5553088fc4d4d43.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.5693,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0003,
+        "driving_license": 0.0532,
+        "pan": 0.3772,
+        "passport": 0.5693
+      }
+    },
+    {
+      "index": 5,
+      "file": "101_jpg.rf.bd98f60dca68812f3736191a70e973b3.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.5591,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0004,
+        "driving_license": 0.045,
+        "pan": 0.3955,
+        "passport": 0.5591
+      }
+    },
+    {
+      "index": 6,
+      "file": "130_jpg.rf.33dadb0f67845e6240590b8458baf850.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.8923,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0004,
+        "driving_license": 0.0392,
+        "pan": 0.0682,
+        "passport": 0.8923
+      }
+    },
+    {
+      "index": 7,
+      "file": "130_jpg.rf.3b967b5833c61f1acbc04f3ffc41e28e.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.9004,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0004,
+        "driving_license": 0.0411,
+        "pan": 0.0582,
+        "passport": 0.9004
+      }
+    },
+    {
+      "index": 8,
+      "file": "131_jpg.rf.81ddd5c3ed44e4d7a5d8982490068604.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.7804,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0031,
+        "driving_license": 0.0346,
+        "pan": 0.1819,
+        "passport": 0.7804
+      }
+    },
+    {
+      "index": 9,
+      "file": "131_jpg.rf.d6de25cf6e037d09b2fab9347745579e.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.7656,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.003,
+        "driving_license": 0.0356,
+        "pan": 0.1958,
+        "passport": 0.7656
+      }
+    },
+    {
+      "index": 10,
+      "file": "141_jpg.rf.46a76972e5f8e84a342c268af6284b70.jpg",
+      "actualType": "passport",
+      "detectedType": "passport",
+      "confidence": 0.9662,
+      "isCorrect": true,
+      "probabilities": {
+        "aadhaar": 0.0001,
+        "driving_license": 0.0162,
+        "pan": 0.0175,
+        "passport": 0.9662
+      }
+    }
+  ]
+}

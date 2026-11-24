@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+*/node_modules/
+
+# Build artifacts
+dist/
+build/
+client/dist/
+
+# Uploads and temporary files (Privacy & Security: Never commit uploaded identity images)
+uploads/
+server/uploads/
+temp/
+*.tmp
+*.log
+
+# Datasets (Privacy & Security: Never commit identity document datasets; ~700 MB / 23,000 files)
+dataset/
+dataset_working/
+dataset_backup/
+
+# Model Training Caches & Baseline Backups
+models/.cache_features/
+models/document_classifier_baseline_backup/
+
+# Tesseract OCR Language Models (Auto-downloaded on demand)
+*.traineddata
+server/*.traineddata
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db

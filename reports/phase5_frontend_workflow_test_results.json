@@ -1,0 +1,250 @@
+[
+  {
+    "testId": 1,
+    "name": "Aadhaar selected + Aadhaar image",
+    "selectedType": "aadhaar",
+    "fileName": "aadhaar_sample.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MATCH",
+      "detectedType": "aadhaar",
+      "confidencePct": "73.2%",
+      "message": "The uploaded document is identified as Aadhaar Card and matches your selection."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.7319,
+      "message": "The uploaded document is identified as Aadhaar Card and matches your selection.",
+      "probabilities": {
+        "aadhaar": 0.7319,
+        "driving_license": 0.2246,
+        "pan": 0.0384,
+        "passport": 0.0051
+      }
+    }
+  },
+  {
+    "testId": 2,
+    "name": "Aadhaar selected + PAN image",
+    "selectedType": "aadhaar",
+    "fileName": "pan_sample.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MISMATCH",
+      "detectedType": "pan",
+      "confidencePct": "95.9%",
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.9587,
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card.",
+      "probabilities": {
+        "aadhaar": 0.0082,
+        "driving_license": 0.0011,
+        "pan": 0.9587,
+        "passport": 0.032
+      }
+    }
+  },
+  {
+    "testId": 3,
+    "name": "PAN selected + Passport image",
+    "selectedType": "pan",
+    "fileName": "passport_sample.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MISMATCH",
+      "detectedType": "passport",
+      "confidencePct": "88.1%",
+      "message": "You selected PAN Card, but the uploaded document appears to be a Indian Passport."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "pan",
+      "detectedType": "passport",
+      "confidence": 0.8811,
+      "message": "You selected PAN Card, but the uploaded document appears to be a Indian Passport.",
+      "probabilities": {
+        "aadhaar": 0.001,
+        "driving_license": 0.0443,
+        "pan": 0.0735,
+        "passport": 0.8811
+      }
+    }
+  },
+  {
+    "testId": 4,
+    "name": "Driving Licence selected + Driving Licence image",
+    "selectedType": "driving_license",
+    "fileName": "dl_sample.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MATCH",
+      "detectedType": "driving_license",
+      "confidencePct": "94.3%",
+      "message": "The uploaded document is identified as Driving Licence and matches your selection."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MATCH",
+      "selectedType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9435,
+      "message": "The uploaded document is identified as Driving Licence and matches your selection.",
+      "probabilities": {
+        "aadhaar": 0.0416,
+        "driving_license": 0.9435,
+        "pan": 0.0041,
+        "passport": 0.0108
+      }
+    }
+  },
+  {
+    "testId": 5,
+    "name": "Passport selected + Aadhaar image",
+    "selectedType": "passport",
+    "fileName": "aadhaar_sample.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MISMATCH",
+      "detectedType": "aadhaar",
+      "confidencePct": "73.2%",
+      "message": "You selected Indian Passport, but the uploaded document appears to be a Aadhaar Card."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "passport",
+      "detectedType": "aadhaar",
+      "confidence": 0.7319,
+      "message": "You selected Indian Passport, but the uploaded document appears to be a Aadhaar Card.",
+      "probabilities": {
+        "aadhaar": 0.7319,
+        "driving_license": 0.2246,
+        "pan": 0.0384,
+        "passport": 0.0051
+      }
+    }
+  },
+  {
+    "testId": 6,
+    "name": "Aadhaar selected + Blurry image",
+    "selectedType": "aadhaar",
+    "fileName": "blurry_aadhaar.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "UNCERTAIN",
+      "detectedType": "pan",
+      "confidencePct": "63.2%",
+      "message": "We could not confidently identify this document. Please upload a clearer image and try again."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "UNCERTAIN",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.6317,
+      "message": "We could not confidently identify this document. Please upload a clearer image and try again.",
+      "probabilities": {
+        "aadhaar": 0.0057,
+        "driving_license": 0.0255,
+        "pan": 0.6317,
+        "passport": 0.3372
+      }
+    }
+  },
+  {
+    "testId": 7,
+    "name": "Aadhaar selected + Unrelated photograph (Nature scene)",
+    "selectedType": "aadhaar",
+    "fileName": "nature_park.jpg",
+    "httpStatus": 200,
+    "frontendDisplay": {
+      "statusBadge": "MISMATCH",
+      "detectedType": "pan",
+      "confidencePct": "81.6%",
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card."
+    },
+    "rawResponse": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.8158,
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card.",
+      "probabilities": {
+        "aadhaar": 0.0133,
+        "driving_license": 0.0235,
+        "pan": 0.8158,
+        "passport": 0.1474
+      }
+    }
+  },
+  {
+    "testId": 8,
+    "name": "Aadhaar selected + Corrupt image file",
+    "selectedType": "aadhaar",
+    "fileName": "corrupted_file.jpg",
+    "httpStatus": 400,
+    "frontendDisplay": {
+      "statusBadge": "INVALID_IMAGE",
+      "detectedType": null,
+      "confidencePct": null,
+      "message": "Corrupt or unsupported image file: Input buffer contains unsupported image format. Please upload a valid JPEG, PNG, or WebP image."
+    },
+    "rawResponse": {
+      "success": false,
+      "status": "INVALID_IMAGE",
+      "selectedType": "aadhaar",
+      "detectedType": null,
+      "confidence": 0,
+      "message": "Corrupt or unsupported image file: Input buffer contains unsupported image format. Please upload a valid JPEG, PNG, or WebP image."
+    }
+  },
+  {
+    "testId": 9,
+    "name": "Aadhaar selected + Unsupported file format (PDF document)",
+    "selectedType": "aadhaar",
+    "fileName": "doc.pdf",
+    "httpStatus": 400,
+    "frontendDisplay": {
+      "statusBadge": "INVALID_IMAGE",
+      "detectedType": null,
+      "confidencePct": null,
+      "message": "Unsupported file type: application/pdf. Allowed types: JPEG, PNG, WEBP."
+    },
+    "rawResponse": {
+      "success": false,
+      "status": "INVALID_IMAGE",
+      "selectedType": "aadhaar",
+      "detectedType": null,
+      "confidence": 0,
+      "message": "Unsupported file type: application/pdf. Allowed types: JPEG, PNG, WEBP."
+    }
+  },
+  {
+    "testId": 10,
+    "name": "Backend unavailable (Server offline)",
+    "selectedType": "aadhaar",
+    "httpStatus": "CONN_REFUSED",
+    "frontendDisplay": {
+      "statusBadge": "NETWORK_ERROR",
+      "detectedType": null,
+      "confidencePct": null,
+      "message": "Could not connect to the backend server. Please verify the backend is running."
+    },
+    "rawResponse": {
+      "success": false,
+      "status": "NETWORK_ERROR",
+      "error": ""
+    }
+  }
+]

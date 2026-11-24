@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-11-19T12:15:08.132Z",
+  "rawDatasetPath": "D:\\VickeyApps Intern\\Document Classification\\dataset",
+  "workingDatasetPath": "D:\\VickeyApps Intern\\Document Classification\\dataset_working",
+  "categories": {
+    "aadhaar": {
+      "splits": {
+        "train": {
+          "baseDocumentsCount": 19,
+          "imageCount": 487
+        },
+        "valid": {
+          "baseDocumentsCount": 5,
+          "imageCount": 124
+        },
+        "test": {
+          "baseDocumentsCount": 5,
+          "imageCount": 135
+        }
+      },
+      "totalImages": 746,
+      "totalBaseDocuments": 29
+    },
+    "pan": {
+      "splits": {
+        "train": {
+          "baseDocumentsCount": 1049,
+          "imageCount": 1050
+        },
+        "valid": {
+          "baseDocumentsCount": 188,
+          "imageCount": 188
+        },
+        "test": {
+          "baseDocumentsCount": 150,
+          "imageCount": 150
+        }
+      },
+      "totalImages": 1388,
+      "totalBaseDocuments": 1387
+    },
+    "driving_license": {
+      "splits": {
+        "train": {
+          "baseDocumentsCount": 611,
+          "imageCount": 1201
+        },
+        "valid": {
+          "baseDocumentsCount": 80,
+          "imageCount": 152
+        },
+        "test": {
+          "baseDocumentsCount": 71,
+          "imageCount": 151
+        }
+      },
+      "totalImages": 1504,
+      "totalBaseDocuments": 762
+    },
+    "passport": {
+      "splits": {
+        "train": {
+          "baseDocumentsCount": 823,
+          "imageCount": 1111
+        },
+        "valid": {
+          "baseDocumentsCount": 115,
+          "imageCount": 150
+        },
+        "test": {
+          "baseDocumentsCount": 113,
+          "imageCount": 151
+        }
+      },
+      "totalImages": 1412,
+      "totalBaseDocuments": 1051
+    }
+  },
+  "overall": {
+    "train": 3849,
+    "valid": 614,
+    "test": 587,
+    "total": 5050
+  }
+}

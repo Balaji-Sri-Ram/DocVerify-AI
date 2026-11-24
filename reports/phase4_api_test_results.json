@@ -1,0 +1,483 @@
+[
+  {
+    "testId": 1,
+    "description": "Aadhaar selected + Aadhaar image",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "aadhaar_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "aadhaar",
+      "confidence": 0.7319,
+      "message": "The uploaded document is identified as Aadhaar Card and matches your selection.",
+      "probabilities": {
+        "aadhaar": 0.7319,
+        "driving_license": 0.2246,
+        "pan": 0.0384,
+        "passport": 0.0051
+      }
+    }
+  },
+  {
+    "testId": 2,
+    "description": "Aadhaar selected + PAN image",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "pan_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.9587,
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card.",
+      "probabilities": {
+        "aadhaar": 0.0082,
+        "driving_license": 0.0011,
+        "pan": 0.9587,
+        "passport": 0.032
+      }
+    }
+  },
+  {
+    "testId": 3,
+    "description": "PAN selected + Passport image",
+    "input": {
+      "selectedType": "pan",
+      "fileName": "passport_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "pan",
+      "detectedType": "passport",
+      "confidence": 0.8811,
+      "message": "You selected PAN Card, but the uploaded document appears to be a Indian Passport.",
+      "probabilities": {
+        "aadhaar": 0.001,
+        "driving_license": 0.0443,
+        "pan": 0.0735,
+        "passport": 0.8811
+      }
+    }
+  },
+  {
+    "testId": 4,
+    "description": "Driving Licence selected + Driving Licence image",
+    "input": {
+      "selectedType": "driving_license",
+      "fileName": "dl_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MATCH",
+      "selectedType": "driving_license",
+      "detectedType": "driving_license",
+      "confidence": 0.9435,
+      "message": "The uploaded document is identified as Driving Licence and matches your selection.",
+      "probabilities": {
+        "aadhaar": 0.0416,
+        "driving_license": 0.9435,
+        "pan": 0.0041,
+        "passport": 0.0108
+      }
+    }
+  },
+  {
+    "testId": 5,
+    "description": "Passport selected + Aadhaar image",
+    "input": {
+      "selectedType": "passport",
+      "fileName": "aadhaar_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "passport",
+      "detectedType": "aadhaar",
+      "confidence": 0.7319,
+      "message": "You selected Indian Passport, but the uploaded document appears to be a Aadhaar Card.",
+      "probabilities": {
+        "aadhaar": 0.7319,
+        "driving_license": 0.2246,
+        "pan": 0.0384,
+        "passport": 0.0051
+      }
+    }
+  },
+  {
+    "testId": 6,
+    "description": "Aadhaar selected + Heavily Blurry image",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "blurry_doc.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "UNCERTAIN",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.6317,
+      "message": "We could not confidently identify this document. Please upload a clearer image and try again.",
+      "probabilities": {
+        "aadhaar": 0.0057,
+        "driving_license": 0.0255,
+        "pan": 0.6317,
+        "passport": 0.3372
+      }
+    }
+  },
+  {
+    "testId": 7,
+    "description": "Aadhaar selected + Unrelated non-document photograph",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "landscape_photo.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "status": "MISMATCH",
+      "selectedType": "aadhaar",
+      "detectedType": "pan",
+      "confidence": 0.8132,
+      "message": "You selected Aadhaar Card, but the uploaded document appears to be a PAN Card.",
+      "probabilities": {
+        "aadhaar": 0.0125,
+        "driving_license": 0.022,
+        "pan": 0.8132,
+        "passport": 0.1524
+      }
+    }
+  },
+  {
+    "testId": 8,
+    "description": "Aadhaar selected + Corrupt image bytes",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "corrupt.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 400,
+    "response": {
+      "success": false,
+      "status": "INVALID_IMAGE",
+      "selectedType": "aadhaar",
+      "detectedType": null,
+      "confidence": 0,
+      "message": "Corrupt or unsupported image file: Input buffer contains unsupported image format. Please upload a valid JPEG, PNG, or WebP image."
+    }
+  },
+  {
+    "testId": 9,
+    "description": "Aadhaar selected + Unsupported file format (plain text)",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": "notes.txt",
+      "fileType": "text/plain"
+    },
+    "httpStatus": 400,
+    "response": {
+      "success": false,
+      "status": "INVALID_IMAGE",
+      "selectedType": "aadhaar",
+      "detectedType": null,
+      "confidence": 0,
+      "message": "Unsupported file type: text/plain. Allowed types: JPEG, PNG, WEBP."
+    }
+  },
+  {
+    "testId": 10,
+    "description": "Aadhaar selected + Missing image upload",
+    "input": {
+      "selectedType": "aadhaar",
+      "fileName": null,
+      "fileType": null
+    },
+    "httpStatus": 400,
+    "response": {
+      "success": false,
+      "status": "INVALID_IMAGE",
+      "selectedType": "aadhaar",
+      "detectedType": null,
+      "confidence": 0,
+      "message": "No image uploaded. Please select and upload a document image."
+    }
+  },
+  {
+    "testId": 11,
+    "description": "Missing document selection + Valid Aadhaar image",
+    "input": {
+      "fileName": "aadhaar_sample.jpg",
+      "fileType": "image/jpeg"
+    },
+    "httpStatus": 400,
+    "response": {
+      "success": false,
+      "status": "INVALID_SELECTION",
+      "selectedType": null,
+      "detectedType": null,
+      "confidence": 0,
+      "message": "Missing document selection. Please select one of: Aadhaar, PAN, Passport, or Driving Licence."
+    }
+  },
+  {
+    "testId": 12,
+    "description": "GET /api/model/status endpoint verification",
+    "httpStatus": 200,
+    "response": {
+      "success": true,
+      "isReady": true,
+      "isTrained": true,
+      "classes": [
+        "aadhaar",
+        "driving_license",
+        "pan",
+        "passport"
+      ],
+      "confidenceThreshold": 0.7,
+      "error": null,
+      "metadata": {
+        "modelName": "MobileNetV2-IdentityDocumentClassifier",
+        "savedAt": "2026-11-19T13:58:07.594Z",
+        "totalRuntimeSeconds": 5823.6,
+        "headTrainingDurationSeconds": 178.1,
+        "backend": "cpu",
+        "classes": [
+          "aadhaar",
+          "driving_license",
+          "pan",
+          "passport"
+        ],
+        "hyperparameters": {
+          "epochs": 5,
+          "batchSize": 8,
+          "learningRate": 0.0005,
+          "featureDim": 1280,
+          "architecture": [
+            {
+              "layer": "MobileNetV2_GAP",
+              "units": 1280,
+              "trainable": false
+            },
+            {
+              "layer": "Dense",
+              "units": 128,
+              "activation": "relu",
+              "trainable": true
+            },
+            {
+              "layer": "Dropout",
+              "rate": 0.3
+            },
+            {
+              "layer": "Dense",
+              "units": 64,
+              "activation": "relu",
+              "trainable": true
+            },
+            {
+              "layer": "Dropout",
+              "rate": 0.2
+            },
+            {
+              "layer": "Dense",
+              "units": 4,
+              "activation": "softmax",
+              "trainable": true
+            }
+          ]
+        },
+        "trainingHistory": [
+          {
+            "epoch": 1,
+            "loss": 1.2767959833145142,
+            "accuracy": 0.39075085520744324,
+            "valLoss": 1.1106170415878296,
+            "valAccuracy": 0.47557002305984497
+          },
+          {
+            "epoch": 2,
+            "loss": 0.9931766390800476,
+            "accuracy": 0.5749545097351074,
+            "valLoss": 0.9120545983314514,
+            "valAccuracy": 0.4951139986515045
+          },
+          {
+            "epoch": 3,
+            "loss": 0.8332674503326416,
+            "accuracy": 0.6404260993003845,
+            "valLoss": 0.6704901456832886,
+            "valAccuracy": 0.7182410359382629
+          },
+          {
+            "epoch": 4,
+            "loss": 0.7208260893821716,
+            "accuracy": 0.7108339667320251,
+            "valLoss": 0.4805973172187805,
+            "valAccuracy": 0.8583061695098877
+          },
+          {
+            "epoch": 5,
+            "loss": 0.6595059633255005,
+            "accuracy": 0.7323980331420898,
+            "valLoss": 0.5154893398284912,
+            "valAccuracy": 0.8208469152450562
+          }
+        ],
+        "evaluation": {
+          "validation": {
+            "totalSamples": 614,
+            "accuracy": 0.8208469055374593,
+            "classMetrics": {
+              "aadhaar": {
+                "support": 124,
+                "truePositives": 89,
+                "falsePositives": 5,
+                "falseNegatives": 35,
+                "accuracy": 0.717741935483871,
+                "precision": 0.9468085106382979,
+                "recall": 0.717741935483871,
+                "f1Score": 0.81651376146789
+              },
+              "driving_license": {
+                "support": 152,
+                "truePositives": 145,
+                "falsePositives": 56,
+                "falseNegatives": 7,
+                "accuracy": 0.9539473684210527,
+                "precision": 0.7213930348258707,
+                "recall": 0.9539473684210527,
+                "f1Score": 0.821529745042493
+              },
+              "pan": {
+                "support": 188,
+                "truePositives": 136,
+                "falsePositives": 8,
+                "falseNegatives": 52,
+                "accuracy": 0.723404255319149,
+                "precision": 0.9444444444444444,
+                "recall": 0.723404255319149,
+                "f1Score": 0.8192771084337349
+              },
+              "passport": {
+                "support": 150,
+                "truePositives": 134,
+                "falsePositives": 41,
+                "falseNegatives": 16,
+                "accuracy": 0.8933333333333333,
+                "precision": 0.7657142857142857,
+                "recall": 0.8933333333333333,
+                "f1Score": 0.8246153846153845
+              }
+            }
+          },
+          "test": {
+            "totalSamples": 587,
+            "accuracy": 0.8313458262350937,
+            "confusionMatrix": [
+              [
+                107,
+                28,
+                0,
+                0
+              ],
+              [
+                1,
+                143,
+                2,
+                5
+              ],
+              [
+                7,
+                11,
+                112,
+                20
+              ],
+              [
+                1,
+                17,
+                7,
+                126
+              ]
+            ],
+            "classMetrics": {
+              "aadhaar": {
+                "support": 135,
+                "truePositives": 107,
+                "falsePositives": 9,
+                "falseNegatives": 28,
+                "accuracy": 0.7925925925925926,
+                "precision": 0.9224137931034483,
+                "recall": 0.7925925925925926,
+                "f1Score": 0.852589641434263
+              },
+              "driving_license": {
+                "support": 151,
+                "truePositives": 143,
+                "falsePositives": 56,
+                "falseNegatives": 8,
+                "accuracy": 0.9470198675496688,
+                "precision": 0.7185929648241206,
+                "recall": 0.9470198675496688,
+                "f1Score": 0.8171428571428572
+              },
+              "pan": {
+                "support": 150,
+                "truePositives": 112,
+                "falsePositives": 9,
+                "falseNegatives": 38,
+                "accuracy": 0.7466666666666667,
+                "precision": 0.9256198347107438,
+                "recall": 0.7466666666666667,
+                "f1Score": 0.826568265682657
+              },
+              "passport": {
+                "support": 151,
+                "truePositives": 126,
+                "falsePositives": 25,
+                "falseNegatives": 25,
+                "accuracy": 0.8344370860927153,
+                "precision": 0.8344370860927153,
+                "recall": 0.8344370860927153,
+                "f1Score": 0.8344370860927153
+              }
+            },
+            "macroAvg": {
+              "precision": 0.8502659196827571,
+              "recall": 0.8301790532254107,
+              "f1Score": 0.8326844625881231
+            },
+            "weightedAvg": {
+              "precision": 0.848170996531549,
+              "recall": 0.8313458262350937,
+              "f1Score": 0.8321523217625136
+            }
+          }
+        },
+        "status": {
+          "isTrained": true,
+          "otherClassSupported": false,
+          "rejectionThresholdRecommended": 0.7
+        }
+      }
+    }
+  }
+]

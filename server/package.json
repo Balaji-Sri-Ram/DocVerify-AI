@@ -1,0 +1,24 @@
+{
+  "name": "document-classification-server",
+  "version": "1.0.0",
+  "description": "AI-Based Identity Document Classification and Verification System - Backend Server",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "inspect": "node scripts/inspectDataset.js",
+    "prepare-dataset": "node scripts/prepareDataset.js",
+    "train": "node scripts/trainModel.js"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "puppeteer-core": "^25.18.1",
+    "sharp": "^0.33.5",
+    "tesseract.js": "^7.0.0"
+  }
+}

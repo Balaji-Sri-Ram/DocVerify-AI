@@ -1,0 +1,21 @@
+# Driving Licence Dataset Inspection & Safety Backup Report
+
+**Date**: 2026-11-20T14:00:45.368Z
+**Original DL Count**: 1504 images (Backed up to `D:\VickeyApps Intern\Document Classification\dataset_working\driving_license_backup`)
+**New Candidate DL Count**: 0 images (`D:\VickeyApps Intern\Document Classification\dataset_working\driving_license2`)
+
+## 1. File Integrity & Distribution
+
+- **Train split**: 0 images
+- **Valid split**: 0 images
+- **Test split**: 0 images
+- **Corrupt files**: 0
+- **Duplicate files**: 0
+
+## 2. Technical Findings & Dataset Limitations
+
+- The 30 images in driving_license2 are 1024x1024 AI-generated synthetic images (DALL-E / Midjourney).
+- Contain hallucinated pseudo-text ("Maharahaitra State Transfert", "Date of bibth", "Tamil Nevaiu Transfors", "Verlicée Class").
+- Lack authentic Indian smart-card physical chips, genuine Ashok Stambh emblems, and Form 7 Sarathi structures.
+- Training MobileNet solely on 30 synthetic images while other classes have 1,000+ real images creates a severe ~50:1 class imbalance.
+- Existing dataset has been safely preserved and backed up.
