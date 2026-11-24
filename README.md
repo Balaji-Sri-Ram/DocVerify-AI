@@ -6,7 +6,7 @@ Built for college project demonstrations and engineering reviews with **clean se
 
 ---
 
-## 📌 Project Overview & Verification Workflow
+## Project Overview & Verification Workflow
 
 The system supports four official Indian identity document categories:
 1. **Aadhaar Card**
@@ -36,7 +36,7 @@ Displays Transparent Outcome:
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React 19, Vite 8, Tailwind CSS v4, Lucide React icons, Axios.
 - **Backend**: Node.js, Express.js, Multer (`memoryStorage`), Sharp (image decoding, resizing, and normalization).
@@ -45,7 +45,7 @@ Displays Transparent Outcome:
 
 ---
 
-## 🧠 Machine Learning Architecture
+## Machine Learning Architecture
 
 ```text
 Input Image (Raw Buffer)
@@ -78,7 +78,7 @@ Class Probabilities: [aadhaar, driving_license, pan, passport]
 
 ---
 
-## 📊 Dataset Structure & Evaluation Results
+## Dataset Structure & Evaluation Results
 
 ### Working Dataset Distribution (`dataset_working/`)
 All original dataset images (`dataset/`) remain 100% intact and untouched. The model was trained and evaluated strictly on the partitioned, zero-leakage working dataset:
@@ -116,11 +116,11 @@ All original dataset images (`dataset/`) remain 100% intact and untouched. The m
 | **PAN** | 7 | 11 | **112** | 20 | 150 |
 | **Passport** | 1 | 17 | 7 | **126** | 151 |
 
-> ⚠️ **Important Aadhaar Dataset Context**: Although the test split contains 135 Aadhaar images, they originate from 5 unique source documents that were augmented. While document-level grouping eliminated cross-split data leakage, 79.26% recall on 5 source documents indicates that broader Aadhaar data collection is recommended before production deployment.
+> **Important Aadhaar Dataset Context**: Although the test split contains 135 Aadhaar images, they originate from 5 unique source documents that were augmented. While document-level grouping eliminated cross-split data leakage, 79.26% recall on 5 source documents indicates that broader Aadhaar data collection is recommended before production deployment.
 
 ---
 
-## ⚡ Performance Benchmarks (Measured)
+## Performance Benchmarks (Measured)
 
 | Metric | Measured Value | Notes |
 | :--- | :---: | :--- |
@@ -132,7 +132,7 @@ All original dataset images (`dataset/`) remain 100% intact and untouched. The m
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Document Classification/
@@ -197,7 +197,7 @@ Document Classification/
 
 ---
 
-## 🚀 Quickstart & Local Setup Guide
+## Quickstart & Local Setup Guide
 
 ### 1. Prerequisites
 - **Node.js** (v18, v20, v22, or v26 verified)
@@ -234,7 +234,7 @@ npm run dev
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### `POST /api/classify`
 Accepts a single document image and the claimed document category.
@@ -267,7 +267,7 @@ Returns image counts, split balances, and leakage audit summaries.
 
 ---
 
-## 🔒 Security & Privacy Review
+## Security & Privacy Review
 
 1. **No Permanent Storage**: Images are uploaded strictly into Node.js RAM (`multer.memoryStorage()`), preprocessed into memory buffers, and immediately garbage-collected upon response completion. No identity images are written to the disk.
 2. **Zero PII Logging**: No Aadhaar numbers, PAN numbers, passport numbers, names, or addresses are logged or extracted.
@@ -276,7 +276,7 @@ Returns image counts, split balances, and leakage audit summaries.
 
 ---
 
-## ⚠️ Known Limitations & The 'Other' Class
+## Known Limitations & The 'Other' Class
 
 - **Absence of 5th 'Other' Dataset**: Because the original dataset contained only 4 identity classes, no fake or synthetic 'Other' images were fabricated.
 - **Softmax Closed-Set Behavior**: In a 4-class classifier, softmax probabilities always sum to 100%. An unrelated photograph (e.g., a green landscape) will be forced onto the 4 classes and may receive an artificially high probability.
